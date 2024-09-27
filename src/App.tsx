@@ -1,6 +1,6 @@
-import React from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import MoviesGrid from "./components/MoviesGrid";
 import "./styles.css";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <div>
         <div className="container">
           <Header></Header>
+          <MoviesGrid></MoviesGrid>
         </div>
         <Footer></Footer>
       </div>
