@@ -17,9 +17,11 @@ export default function MoviesGrid() {
   const handleSearchTermChange = (e) => {
     setSearchTerm(e.target.value);
   };
+
   const handleGenreChange = (e) => {
     setGenre(e.target.value);
   };
+
   const handleRatingChange = (e) => {
     setRating(e.target.value);
   };
@@ -30,6 +32,7 @@ export default function MoviesGrid() {
       movie.genre.toLowerCase() === genre.toLowerCase()
     );
   };
+
   const matchesSearchTerm = (movie, genre) => {
     return movie.title.toLowerCase().includes(searchTerm.toLowerCase());
   };
